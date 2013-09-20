@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009BF73517EBF34900AB8E82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF73417EBF34900AB8E82 /* UIKit.framework */; };
+		009BF73717EBF34900AB8E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF73617EBF34900AB8E82 /* Foundation.framework */; };
+		009BF73917EBF34900AB8E82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF73817EBF34900AB8E82 /* CoreGraphics.framework */; };
+		009BF73F17EBF34900AB8E82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 009BF73D17EBF34900AB8E82 /* InfoPlist.strings */; };
+		009BF74117EBF34900AB8E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF74017EBF34900AB8E82 /* main.m */; };
+		009BF74517EBF34900AB8E82 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF74417EBF34900AB8E82 /* BIDAppDelegate.m */; };
+		009BF74817EBF34900AB8E82 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF74717EBF34900AB8E82 /* BIDViewController.m */; };
+		009BF74B17EBF34A00AB8E82 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009BF74917EBF34A00AB8E82 /* BIDViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		009BF73017EBF34900AB8E82 /* SlowWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		009BF73417EBF34900AB8E82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		009BF73617EBF34900AB8E82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		009BF73817EBF34900AB8E82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		009BF73C17EBF34900AB8E82 /* SlowWorker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlowWorker-Info.plist"; sourceTree = "<group>"; };
+		009BF73E17EBF34900AB8E82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		009BF74017EBF34900AB8E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		009BF74217EBF34900AB8E82 /* SlowWorker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlowWorker-Prefix.pch"; sourceTree = "<group>"; };
+		009BF74317EBF34900AB8E82 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		009BF74417EBF34900AB8E82 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		009BF74617EBF34900AB8E82 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		009BF74717EBF34900AB8E82 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		009BF74A17EBF34A00AB8E82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		009BF72D17EBF34900AB8E82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009BF73517EBF34900AB8E82 /* UIKit.framework in Frameworks */,
+				009BF73717EBF34900AB8E82 /* Foundation.framework in Frameworks */,
+				009BF73917EBF34900AB8E82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009BF72517EBF34900AB8E82 = {
+			isa = PBXGroup;
+			children = (
+				009BF73A17EBF34900AB8E82 /* SlowWorker */,
+				009BF73317EBF34900AB8E82 /* Frameworks */,
+				009BF73117EBF34900AB8E82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		009BF73117EBF34900AB8E82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				009BF73017EBF34900AB8E82 /* SlowWorker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		009BF73317EBF34900AB8E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009BF73417EBF34900AB8E82 /* UIKit.framework */,
+				009BF73617EBF34900AB8E82 /* Foundation.framework */,
+				009BF73817EBF34900AB8E82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		009BF73A17EBF34900AB8E82 /* SlowWorker */ = {
+			isa = PBXGroup;
+			children = (
+				009BF74317EBF34900AB8E82 /* BIDAppDelegate.h */,
+				009BF74417EBF34900AB8E82 /* BIDAppDelegate.m */,
+				009BF74617EBF34900AB8E82 /* BIDViewController.h */,
+				009BF74717EBF34900AB8E82 /* BIDViewController.m */,
+				009BF74917EBF34A00AB8E82 /* BIDViewController.xib */,
+				009BF73B17EBF34900AB8E82 /* Supporting Files */,
+			);
+			path = SlowWorker;
+			sourceTree = "<group>";
+		};
+		009BF73B17EBF34900AB8E82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				009BF73C17EBF34900AB8E82 /* SlowWorker-Info.plist */,
+				009BF73D17EBF34900AB8E82 /* InfoPlist.strings */,
+				009BF74017EBF34900AB8E82 /* main.m */,
+				009BF74217EBF34900AB8E82 /* SlowWorker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		009BF72F17EBF34900AB8E82 /* SlowWorker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009BF74E17EBF34A00AB8E82 /* Build configuration list for PBXNativeTarget "SlowWorker" */;
+			buildPhases = (
+				009BF72C17EBF34900AB8E82 /* Sources */,
+				009BF72D17EBF34900AB8E82 /* Frameworks */,
+				009BF72E17EBF34900AB8E82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowWorker;
+			productName = SlowWorker;
+			productReference = 009BF73017EBF34900AB8E82 /* SlowWorker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		009BF72717EBF34900AB8E82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 009BF72A17EBF34900AB8E82 /* Build configuration list for PBXProject "SlowWorker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 009BF72517EBF34900AB8E82;
+			productRefGroup = 009BF73117EBF34900AB8E82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				009BF72F17EBF34900AB8E82 /* SlowWorker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		009BF72E17EBF34900AB8E82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009BF73F17EBF34900AB8E82 /* InfoPlist.strings in Resources */,
+				009BF74B17EBF34A00AB8E82 /* BIDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		009BF72C17EBF34900AB8E82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009BF74117EBF34900AB8E82 /* main.m in Sources */,
+				009BF74517EBF34900AB8E82 /* BIDAppDelegate.m in Sources */,
+				009BF74817EBF34900AB8E82 /* BIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		009BF73D17EBF34900AB8E82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009BF73E17EBF34900AB8E82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		009BF74917EBF34A00AB8E82 /* BIDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009BF74A17EBF34A00AB8E82 /* en */,
+			);
+			name = BIDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		009BF74C17EBF34A00AB8E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		009BF74D17EBF34A00AB8E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		009BF74F17EBF34A00AB8E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				INFOPLIST_FILE = "SlowWorker/SlowWorker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		009BF75017EBF34A00AB8E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				INFOPLIST_FILE = "SlowWorker/SlowWorker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		009BF72A17EBF34900AB8E82 /* Build configuration list for PBXProject "SlowWorker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009BF74C17EBF34A00AB8E82 /* Debug */,
+				009BF74D17EBF34A00AB8E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009BF74E17EBF34A00AB8E82 /* Build configuration list for PBXNativeTarget "SlowWorker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009BF74F17EBF34A00AB8E82 /* Debug */,
+				009BF75017EBF34A00AB8E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 009BF72717EBF34900AB8E82 /* Project object */;
+}
