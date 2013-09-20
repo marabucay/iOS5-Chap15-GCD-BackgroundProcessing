@@ -10,4 +10,9 @@
 
 @interface BIDViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *startButton;
+@property (strong, nonatomic) IBOutlet UITextView *resultsTextView;
+- (IBAction)doWork:(id)sender;
+
+
 @end
