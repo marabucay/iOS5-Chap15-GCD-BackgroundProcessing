@@ -11,4 +11,6 @@
 @interface BIDViewController : UIViewController
 
 @property (strong, nonatomic) UILabel *label;
+@property (strong, nonatomic) UIImage *smiley;
+@property (strong, nonatomic) UIImageView *smileyView;
 @end

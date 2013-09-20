@@ -17,6 +17,7 @@
 @implementation BIDViewController
 @synthesize label;
 @synthesize animate;
+@synthesize smiley, smileyView;
 
 - (void)applicationWillResignActive {
     NSLog(@"VC: %@", NSStringFromSelector(_cmd));
@@ -39,6 +40,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidEnterBackground)
+                                                 name:UIApplicationDidEnterBackgroundNotification
+                                               object:[UIApplication sharedApplication]];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationWillEnterForeground)
+                                                 name:UIApplicationWillEnterForegroundNotification
+                                               object:[UIApplication sharedApplication]];
 	// Do any additional setup after loading the view, typically from a nib.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(applicationWillResignActive)
@@ -56,7 +65,30 @@
     label.text = @"Bazinga!";
     label.textAlignment = UITextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
+    // smiley.png is 84 x 84
+    CGRect smileyFrame = CGRectMake(CGRectGetMidX(bounds) - 42,
+                                    CGRectGetMidY(bounds)/2 - 42,
+                                    84, 84);
+    self.smileyView = [[UIImageView alloc] initWithFrame:smileyFrame];
+    self.smileyView.contentMode = UIViewContentModeCenter;
+    NSString *smileyPath = [[NSBundle mainBundle] pathForResource:@"smiley"
+                                                           ofType:@"png"];
+    self.smiley = [UIImage imageWithContentsOfFile:smileyPath];
+    self.smileyView.image = self.smiley;
+    [self.view addSubview:smileyView];
     [self.view addSubview:label];
+}
+- (void)applicationDidEnterBackground {
+    NSLog(@"VC: %@", NSStringFromSelector(_cmd));
+    self.smiley = nil;
+    self.smileyView.image = nil;
+}
+- (void)applicationWillEnterForeground {
+    NSLog(@"VC: %@", NSStringFromSelector(_cmd));
+    NSString *smileyPath = [[NSBundle mainBundle] pathForResource:@"smiley"
+                                                           ofType:@"png"];
+    self.smiley = [UIImage imageWithContentsOfFile:smileyPath];
+    self.smileyView.image = self.smiley;
 }
 
 - (void)viewDidUnload
@@ -65,6 +97,8 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     self.label = nil;
+    self.smiley = nil;
+    self.smileyView = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
