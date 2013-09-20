@@ -85,11 +85,22 @@
     [self.view addSubview:segmentedControl];
     [self.view addSubview:smileyView];
     [self.view addSubview:label];
+    
+    NSNumber *indexNumber;
+    if (indexNumber = [[NSUserDefaults standardUserDefaults]
+                       objectForKey:@"selectedIndex"]) {
+        NSInteger selectedIndex = [indexNumber intValue];
+        self.segmentedControl.selectedSegmentIndex = selectedIndex;
+    }
 }
 - (void)applicationDidEnterBackground {
     NSLog(@"VC: %@", NSStringFromSelector(_cmd));
     self.smiley = nil;
     self.smileyView.image = nil;
+    
+    NSInteger selectedIndex = self.segmentedControl.selectedSegmentIndex;
+    [[NSUserDefaults standardUserDefaults] setInteger:selectedIndex
+                                               forKey:@"selectedIndex"];
 }
 - (void)applicationWillEnterForeground {
     NSLog(@"VC: %@", NSStringFromSelector(_cmd));
