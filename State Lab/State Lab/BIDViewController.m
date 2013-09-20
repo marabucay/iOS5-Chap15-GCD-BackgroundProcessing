@@ -18,6 +18,7 @@
 @synthesize label;
 @synthesize animate;
 @synthesize smiley, smileyView;
+@synthesize segmentedControl;
 
 - (void)applicationWillResignActive {
     NSLog(@"VC: %@", NSStringFromSelector(_cmd));
@@ -75,6 +76,13 @@
                                                            ofType:@"png"];
     self.smiley = [UIImage imageWithContentsOfFile:smileyPath];
     self.smileyView.image = self.smiley;
+    self.segmentedControl = [[UISegmentedControl alloc] initWithItems:
+                             [NSArray arrayWithObjects:
+                              @"One", @"Two", @"Three", @"Four", nil]] ;
+    self.segmentedControl.frame = CGRectMake(bounds.origin.x + 20,
+                                             CGRectGetMaxY(bounds) - 50,
+                                             bounds.size.width - 40, 30);
+    [self.view addSubview:segmentedControl];
     [self.view addSubview:smileyView];
     [self.view addSubview:label];
 }
@@ -99,6 +107,7 @@
     self.label = nil;
     self.smiley = nil;
     self.smileyView = nil;
+    self.segmentedControl = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated

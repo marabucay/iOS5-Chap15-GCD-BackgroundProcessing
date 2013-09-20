@@ -13,4 +13,5 @@
 @property (strong, nonatomic) UILabel *label;
 @property (strong, nonatomic) UIImage *smiley;
 @property (strong, nonatomic) UIImageView *smileyView;
+@property (strong, nonatomic) UISegmentedControl *segmentedControl;
 @end
