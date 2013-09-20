@@ -10,4 +10,5 @@
 
 @interface BIDViewController : UIViewController
 
+@property (strong, nonatomic) UILabel *label;
 @end
