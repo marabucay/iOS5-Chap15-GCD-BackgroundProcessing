@@ -13,6 +13,7 @@
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBUITextView</string>
 			<string>IBUIButton</string>
+			<string>IBUIActivityIndicatorView</string>
 			<string>IBUIView</string>
 			<string>IBProxyObject</string>
 		</array>
@@ -36,13 +37,13 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIButton" id="1880393">
+					<object class="IBUIButton" id="718269085">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{99, 20}, {123, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="350945798"/>
+						<reference key="NSNextKeyView" ref="120854657"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -71,7 +72,7 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUITextView" id="350945798">
+					<object class="IBUITextView" id="120854657">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{0, 65}, {320, 407}}</string>
@@ -100,11 +101,21 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
+					<object class="IBUIActivityIndicatorView" id="444543716">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">-2147483356</int>
+						<string key="NSFrame">{{230, 20}, {37, 37}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIStyle">0</int>
+					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="1880393"/>
+				<reference key="NSNextKeyView" ref="718269085"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -131,7 +142,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">startButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1880393"/>
+						<reference key="destination" ref="718269085"/>
 					</object>
 					<int key="connectionID">10</int>
 				</object>
@@ -139,14 +150,22 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">resultsTextView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="350945798"/>
+						<reference key="destination" ref="120854657"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">spinner</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="444543716"/>
+					</object>
+					<int key="connectionID">14</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">doWork:</string>
-						<reference key="source" ref="1880393"/>
+						<reference key="source" ref="718269085"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -176,19 +195,25 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="350945798"/>
-							<reference ref="1880393"/>
+							<reference ref="120854657"/>
+							<reference ref="718269085"/>
+							<reference ref="444543716"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="1880393"/>
+						<reference key="object" ref="718269085"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="350945798"/>
+						<reference key="object" ref="120854657"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">13</int>
+						<reference key="object" ref="444543716"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -198,6 +223,7 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -206,7 +232,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">12</int>
+			<int key="maxID">14</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -226,12 +252,17 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="resultsTextView">UITextView</string>
+						<string key="spinner">UIActivityIndicatorView</string>
 						<string key="startButton">UIButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="resultsTextView">
 							<string key="name">resultsTextView</string>
 							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="spinner">
+							<string key="name">spinner</string>
+							<string key="candidateClassName">UIActivityIndicatorView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="startButton">
 							<string key="name">startButton</string>
